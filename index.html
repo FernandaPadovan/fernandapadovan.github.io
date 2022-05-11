@@ -1,7 +1,223 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- bootstrap icon -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
+  <title>Services page </title>
+  <!-- java internal -->
+  <script src="JS/Javascript.js"></script>
+  <!-- css internal -->
+  <link rel="stylesheet" href="css/Images/">
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+  <div class="container-fluid">
+    <header
+      class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+      <a href="#" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none ">
+        <i class="bi bi-box2-heart"></i>
+      </a>
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li>
+          <a href="Home.html" class="nav-link px-2 link-secondary">Home</a>
+        </li>
+        <li>
+          <a href="page2.html" class="nav-link px-2 link-dark">About</a>
+        </li>
+        <li>
+          <a href="Page1.html" class="nav-link px-2 link-dark">Services</a>
+        </li>
+
+        <li>
+          <a href="Contact.html" class="nav-link px-2 link-dark">Contact</a>
+        </li>
+      </ul>
+      <div class="col-md-3 text-end">
+        <!-- Button Login modal -->
+        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#loginModal"
+          onclick="updatephrase('Log in')"> Log in </button>
+        <!-- Button Register modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal"
+          onclick="updatephrase('Sign up for free')"> Register here </button>
+        <!-- Modal Log in and Register -->
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content ">
+              <div class="modal-header border-bottom-0">
+                <h3 class="modal-title modal-phrase">$</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body p-5 pt-0">
+                <form class="">
+                  <div class="form-floating mb-3">
+                    <input type="email" class="form-control rounded-4" id="floatingInputlog"
+                      placeholder="name@example.com">
+                    <label for="floatingInputlog">Email address</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="password" class="form-control rounded-4" id="floatingPasswordlog"
+                      placeholder="Password">
+                    <label for="floatingPasswordlog">Password</label>
+                  </div>
+                  <button class="w-100 mb-2 btn btn-lg rounded-4 btn-primary" type="submit">Log in</button>
+                  <hr class="my-4">
+                  <h2 class="fs-5 fw-bold mb-3 text-center">Or use a third-party</h2>
+                  <button class="w-100 py-2 mb-2 btn btn-outline-dark rounded-4" type="submit">
+                    <svg class="bi me-1" width="16" height="16">
+                      <use xlink:href="#twitter"></use>
+                    </svg> Log in with Twitter </button>
+                  <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-4" type="submit">
+                    <svg class="bi me-1" width="16" height="16">
+                      <use xlink:href="#facebook"></use>
+                    </svg> Log in with Facebook </button>
+                  <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-4" type="submit">
+                    <svg class="bi me-1" width="16" height="16">
+                      <use xlink:href="#github"></use>
+                    </svg> Log in with GitHub </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+
+
+<!-- Main -->
+ <main>
+   <div class="container">
+     <div id="MainSlider" class="carousel carousel-dark slide" data-bs-ride="carousel">
+       <div class="carousel-indicators">
+         <button type="button" data-bs-target="#MainSlider" data-bs-slide-to="0" class="active" aria-current="true"
+           aria-label="Slide 1"></button>
+         <button type="button" data-bs-target="#MainSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+         <button type="button" data-bs-target="#MainSlider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+       </div>
+       <div class="carousel-inner">
+         <div class="carousel-item active">
+           <img
+             src="css/Images/imagem-de-jovem-trabalhadora-de-empresa-asiatica-em-oculos-sorrindo-e-segurando-tablet-digital-em-pe-sobre-fundo-branco_1258-90811.png"
+             class="d-block w-100" alt="nice">
+           <div class="carousel-caption d-none d-md-block">
+             <h5>I built this website using Bootstrap</h5>
+             <p>It was fun</p>
+           </div>
+         </div>
+         <div class="carousel-item">
+           <img
+             src="https://img.freepik.com/fotos-gratis/vista-superior-dos-empresarios-no-escritorio_23-2148427114.jpg?w=1380"
+             class="d-block w-100" alt="cool">
+           <div class="carousel-caption d-none d-md-block text-white">
+             <h5>Second slide label</h5>
+             <p>Some representative placeholder content for the second slide.</p>
+           </div>
+         </div>
+         <div class="carousel-item">
+           <img
+             src="https://img.freepik.com/fotos-gratis/colegas-dando-uma-colisao-de-punho_53876-64857.jpg?w=1380&t=st=1651770911~exp=1651771511~hmac=d700be31f6c01c3fb4d03cd70b989be1a94a9f27688e5976d7413fba53b2a463"
+             class="d-block w-100" alt="fun">
+           <div class="carousel-caption d-none d-md-block">
+             <h5>Third slide label</h5>
+             <p>Some representative placeholder content for the third slide.</p>
+           </div>
+         </div>
+       </div>
+       <button class="carousel-control-prev" type="button" data-bs-target="#MainSlider" data-bs-slide="prev">
+         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+         <span class="visually-hidden">Previous</span>
+       </button>
+       <button class="carousel-control-next" type="button" data-bs-target="#MainSlider" data-bs-slide="next">
+         <span class="carousel-control-next-icon" aria-hidden="true"></span>
+         <span class="visually-hidden">Next</span>
+       </button>
+     </div>
+   </div>
+
+   <div class="container px-4 py-5" id="hanging-icons">
+     <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+       <div class="col d-flex align-items-start">
+         <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+           <i class="bi bi-toggles2"></i>
+         </div>
+         <div>
+           <h2>Featured title</h2>
+           <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and
+             probably just keep going until we run out of words.</p>
+
+         </div>
+       </div>
+       <div class="col d-flex align-items-start">
+         <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+           <i class="bi bi-cpu-fill"></i>
+         </div>
+         <div>
+           <h2>Featured title</h2>
+           <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and
+             probably just keep going until we run out of words.</p>
+
+         </div>
+       </div>
+       <div class="col d-flex align-items-start">
+         <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+           <i class="bi bi-tools"></i>
+         </div>
+         <div>
+           <h2>Featured title</h2>
+           <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and
+             probably just keep going until we run out of words.</p>
+
+         </div>
+       </div>
+     </div>
+   </div>
+ </main>
+
+
+
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <p class="col-md-4 mb-0 text-muted">Ferniie, 2022</p>
+        <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+          <svg class="bi me-2" width="40" height="32"></svg>
+        </a>
+        <ul class="nav col-md-4 justify-content-end">
+          <li>
+            <a href="Home.html" class="nav-link px-2 link-secondary">Home</a>
+          </li>
+          <li>
+            <a href="page2.html" class="nav-link px-2 link-dark">About</a>
+          </li>
+          <li>
+            <a href="Page1.html" class="nav-link px-2 link-dark">Services</a>
+          </li>
+
+          <li>
+            <a href="Contact.html" class="nav-link px-2 link-dark">Contact</a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+    <!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
 </html>
+
+
+
+
+
+
+
