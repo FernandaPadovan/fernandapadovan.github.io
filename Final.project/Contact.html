@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- bootstrap icon -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
+  <title>Contact page </title>
+  <!-- java internal -->
+  <script src="JS/Javascript.js"></script>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <header
+      class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+      <a href="#" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none ">
+        <i class="bi bi-box2-heart"></i>
+      </a>
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li>
+          <a href="Home.html" class="nav-link px-2 link-secondary">Home</a>
+        </li>
+        <li>
+          <a href="page2.html" class="nav-link px-2 link-dark">About</a>
+        </li>
+        <li>
+          <a href="Page1.html" class="nav-link px-2 link-dark">Services</a>
+        </li>
+
+        <li>
+          <a href="Contact.html" class="nav-link px-2 link-dark">Contact</a>
+        </li>
+      </ul>
+      <div class="col-md-3 text-end">
+        <!-- Button Login modal -->
+        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#loginModal"
+          onclick="updatephrase('Log in')"> Log in </button>
+        <!-- Button Register modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal"
+          onclick="updatephrase('Sign up for free')"> Register here </button>
+        <!-- Modal Log in and Register -->
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content ">
+              <div class="modal-header border-bottom-0">
+                <h3 class="modal-title modal-phrase">$</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body p-5 pt-0">
+                <form class="">
+                  <div class="form-floating mb-3">
+                    <input type="email" class="form-control rounded-4" id="floatingInputlog"
+                      placeholder="name@example.com">
+                    <label for="floatingInputlog">Email address</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="password" class="form-control rounded-4" id="floatingPasswordlog"
+                      placeholder="Password">
+                    <label for="floatingPasswordlog">Password</label>
+                  </div>
+                  <button class="w-100 mb-2 btn btn-lg rounded-4 btn-primary" type="submit">Log in</button>
+                  <hr class="my-4">
+                  <h2 class="fs-5 fw-bold mb-3 text-center">Or use a third-party</h2>
+                  <button class="w-100 py-2 mb-2 btn btn-outline-dark rounded-4" type="submit">
+                    <svg class="bi me-1" width="16" height="16">
+                      <use xlink:href="#twitter"></use>
+                    </svg> Log in with Twitter </button>
+                  <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-4" type="submit">
+                    <svg class="bi me-1" width="16" height="16">
+                      <use xlink:href="#facebook"></use>
+                    </svg> Log in with Facebook </button>
+                  <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-4" type="submit">
+                    <svg class="bi me-1" width="16" height="16">
+                      <use xlink:href="#github"></use>
+                    </svg> Log in with GitHub </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+
+
+ <!-- Main -->
+ <main>
+  <div class="container text-center">
+   <h1>Have a questions?</h1>
+   <p class="lead">Contact Us</p>
+
+<br><br>
+   <div class="row g-5">
+    <div class="col-md-6 text-center" >
+      <h3>Contact</h3>
+      <p class="lead">ferniie@coursera.com</p>
+      <p class="lead">(123)456789</p>
+      <p class="lead">South or North 123</p>
+      <p class="lead">458966</p>
+
+    </div>
+
+    <div class="col-md-6 text-center">
+      <h3>Location</h3>
+      <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="246" id="gmap_canvas" src="https://maps.google.com/maps?q=europe&t=k&z=1&ie=UTF8&iwloc=&output=embed"></iframe><a href="https://putlocker-is.org"></a><br><style>.mapouter{position:relative;text-align:right;height:246px;width:600px;}</style><a href="https://www.embedgooglemap.net">how to get google map embed code</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:246px;width:600px;}</style></div></div>    </div>
+
+  </div>
+
+</div>
+</main>
+
+<div class="container">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <p class="col-md-4 mb-0 text-muted">Ferniie, 2022</p>
+    <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+      <svg class="bi me-2" width="40" height="32"></svg>
+    </a>
+    <ul class="nav col-md-4 justify-content-end">
+      <li>
+        <a href="Home.html" class="nav-link px-2 link-secondary">Home</a>
+      </li>
+      <li>
+        <a href="page2.html" class="nav-link px-2 link-dark">About</a>
+      </li>
+      <li>
+        <a href="Page1.html" class="nav-link px-2 link-dark">Services</a>
+      </li>
+
+      <li>
+        <a href="Contact.html" class="nav-link px-2 link-dark">Contact</a>
+      </li>
+    </ul>
+  </footer>
+</div>
+    <!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

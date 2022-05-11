@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- bootstrap icon -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
+  <title>Services page </title>
+  <!-- java internal -->
+  <script src="JS/Javascript.js"></script>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <header
+      class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+      <a href="#" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none ">
+        <i class="bi bi-box2-heart"></i>
+      </a>
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li>
+          <a href="Home.html" class="nav-link px-2 link-secondary">Home</a>
+        </li>
+        <li>
+          <a href="page2.html" class="nav-link px-2 link-dark">About</a>
+        </li>
+        <li>
+          <a href="Page1.html" class="nav-link px-2 link-dark">Services</a>
+        </li>
+
+        <li>
+          <a href="Contact.html" class="nav-link px-2 link-dark">Contact</a>
+        </li>
+      </ul>
+      <div class="col-md-3 text-end">
+        <!-- Button Login modal -->
+        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#loginModal"
+          onclick="updatephrase('Log in')"> Log in </button>
+        <!-- Button Register modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal"
+          onclick="updatephrase('Sign up for free')"> Register here </button>
+        <!-- Modal Log in and Register -->
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content ">
+              <div class="modal-header border-bottom-0">
+                <h3 class="modal-title modal-phrase">$</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body p-5 pt-0">
+                <form class="">
+                  <div class="form-floating mb-3">
+                    <input type="email" class="form-control rounded-4" id="floatingInputlog"
+                      placeholder="name@example.com">
+                    <label for="floatingInputlog">Email address</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="password" class="form-control rounded-4" id="floatingPasswordlog"
+                      placeholder="Password">
+                    <label for="floatingPasswordlog">Password</label>
+                  </div>
+                  <button class="w-100 mb-2 btn btn-lg rounded-4 btn-primary" type="submit">Log in</button>
+                  <hr class="my-4">
+                  <h2 class="fs-5 fw-bold mb-3 text-center">Or use a third-party</h2>
+                  <button class="w-100 py-2 mb-2 btn btn-outline-dark rounded-4" type="submit">
+                    <svg class="bi me-1" width="16" height="16">
+                      <use xlink:href="#twitter"></use>
+                    </svg> Log in with Twitter </button>
+                  <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-4" type="submit">
+                    <svg class="bi me-1" width="16" height="16">
+                      <use xlink:href="#facebook"></use>
+                    </svg> Log in with Facebook </button>
+                  <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-4" type="submit">
+                    <svg class="bi me-1" width="16" height="16">
+                      <use xlink:href="#github"></use>
+                    </svg> Log in with GitHub </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+
+
+  <!-- Main -->
+  <main>
+    <div class="container py-3">
+      <header>
+        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-bookmark-heart" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"/>
+            <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+          </svg>
+          <h1 class="display-4 fw-normal">Services</h1>
+          <p class="fs-5 text-muted">Responsive Web Biulder</p>
+        </div>
+      </header>
+      <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Free</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">$0 <small class="text-muted fw-light">/mo</small>
+              </h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>10 users included</li>
+                <li>Email support</li>
+                <li>Help center access</li>
+              </ul>
+              <button type="button" class="w-100 btn btn-lg btn-outline-primary" data-bs-toggle="modal" data-bs-target="#loginModal"
+              onclick="updatephrase('Sign up for free')"> Sign up for free </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Standard</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">$54 <small class="text-muted fw-light">/mo</small>
+              </h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>20 users included</li>
+                <li>Priority email support</li>
+                <li>Help center access</li>
+              </ul>
+              <button type="button" class="w-100 btn btn-lg btn-primary" data-bs-toggle="modal"
+                data-bs-target="#CheckoutModalStandard" onClick="updatePrice(54); ">Get started</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm border-primary">
+            <div class="card-header py-3 text-white bg-primary border-primary">
+              <h4 class="my-0 fw-normal">Premium</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">$89 <small class="text-muted fw-light">/mo</small>
+              </h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>30 users included</li>
+                <li>Phone and email support</li>
+                <li>Help center access</li>
+              </ul>
+              <button type="button" class="w-100 btn btn-lg btn-primary" data-bs-toggle="modal"
+                data-bs-target="#CheckoutModalStandard" onClick="updatePrice(89); ">Get started</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Modal Checkout -->
+      <div class="modal fade" id="CheckoutModalStandard" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content ">
+            <div class="modal-header border-bottom-0">
+              <h3 class="modal-title">Check Out</h3>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-5 pt-0">
+              <div class="container d-flex justify-content-center mt-5 mb-5">
+
+
+
+                <div class="row g-3">
+
+                  <div class="col-md-6">
+
+                    <span>Payment Method</span>
+                    <div class="card">
+
+                      <div class="accordion" id="accordionExample">
+
+                        <div class="card">
+                          <div class="card-header p-0" id="headingTwo">
+                            <h2 class="mb-0">
+                              <button
+                                class="btn btn-light btn-block text-left collapsed p-3 rounded-0 border-bottom-custom"
+                                type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                aria-controls="collapseTwo">
+                                <div class="d-flex align-items-center justify-content-between">
+
+                                  <span>Paypal</span>
+                                  <img src="https://i.imgur.com/7kQEsHU.png" width="30" alt="pic">
+
+                                </div>
+                              </button>
+                            </h2>
+                          </div>
+                          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                              <input type="text" class="form-control" placeholder="Paypal email">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="card">
+                          <div class="card-header p-0">
+                            <h2 class="mb-0">
+                              <button class="btn btn-light btn-block text-left p-3 rounded-0" data-toggle="collapse"
+                                data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <div class="d-flex align-items-center justify-content-between">
+
+                                  <span>Credit card</span>
+                                  <div class="icons">
+                                    <img src="https://i.imgur.com/2ISgYja.png" width="30" alt="cre">
+                                    <img src="https://i.imgur.com/W1vtnOV.png" width="30" alt="dit">
+                                    <img src="https://i.imgur.com/35tC99g.png" width="30" alt="car">
+                                    <img src="https://i.imgur.com/2ISgYja.png" width="30" alt="other">
+                                  </div>
+
+                                </div>
+                              </button>
+                            </h2>
+                          </div>
+
+                          <div id="collapseOne" class="collapse show"
+                            data-parent="#accordionExample">
+                            <div class="card-body payment-card-body">
+
+                              <span class="font-weight-normal card-text">Card Number</span>
+                              <div class="input">
+
+                                <i class="fa fa-credit-card"></i>
+                                <input type="text" class="form-control" placeholder="0000 0000 0000 0000">
+
+                              </div>
+
+                              <div class="row mt-3 mb-3">
+
+                                <div class="col-md-6">
+
+                                  <span class="font-weight-normal card-text">Expiry Date</span>
+                                  <div class="input">
+
+                                    <i class="fa fa-calendar"></i>
+                                    <input type="text" class="form-control" placeholder="MM/YY">
+
+                                  </div>
+
+                                </div>
+
+
+                                <div class="col-md-6">
+
+                                  <span class="font-weight-normal card-text">CVC/CVV</span>
+                                  <div class="input">
+
+                                    <i class="fa fa-lock"></i>
+                                    <input type="text" class="form-control" placeholder="000">
+
+                                  </div>
+
+                                </div>
+
+
+                              </div>
+
+                              <span class="text-muted certificate-text"><i class="fa fa-lock"></i> Your
+                                transaction is secured with ssl certificate</span>
+
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="col-md-6">
+                    <span>Summary</span>
+
+                    <div class="card">
+
+                      <div class="d-flex justify-content-between p-3">
+
+                        <div class="d-flex flex-column">
+
+                          <span>Standard(Billed Monthly) <i class="fa fa-caret-down"></i></span>
+                          <a href="#" class="billing">Save 20% with annual billing</a>
+
+                        </div>
+
+                        <div class="mt-1">
+                          <sup class="super-price modal-price">$xx</sup><br>
+                          <span class="super-month">/Month</span>
+                        </div>
+
+                      </div>
+
+                      <hr class="mt-0 line">
+                      <div class="p-3">
+                        <div class="d-flex justify-content-between mb-2">
+                        </div>
+                        <div class="d-flex justify-content-between">
+                          <span>Promo <i class="fa fa-clock-o"></i></span>
+                          <span>-0%</span>
+                        </div>
+                      </div>
+                      <hr class="mt-0 line">
+                      <div class="p-3 d-flex justify-content-between">
+                        <div class="d-flex flex-column">
+                          <span>Today you pay(US Dollars)</span>
+                          <small>After 30 days <span class="modal-price">$xx</span></small>
+                        </div>
+                        <span>$0</span>
+                      </div>
+                      <div class="p-3">
+                        <button class="btn btn-primary btn-block free-button" data-bs-toggle="modal" data-bs-target="#loginModal"
+                        onclick="updatephrase('Sign up for free')">Try it free for 30 days</button>
+                        <div class="text-center">
+                          <a href="#">Have a promo code?</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="display-6 text-center mb-4">Compare plans</h2>
+      <div class="table-responsive">
+        <table class="table text-center">
+          <thead>
+            <tr>
+              <th style="width: 34%;"></th>
+              <th style="width: 22%;">Free</th>
+              <th style="width: 22%;">Standard</th>
+              <th style="width: 22%;">Premium</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" class="text-start">Public</th>
+              <td>
+                <i class="bi bi-check-lg"></i>
+              </td>
+              <td>
+                <i class="bi bi-check-lg"></i>
+              </td>
+              <td>
+                <i class="bi bi-check-lg"></i>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-start">Private</th>
+              <td></td>
+              <td>
+                <i class="bi bi-check-lg"></i>
+              </td>
+              <td>
+                <i class="bi bi-check-lg"></i>
+              </td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <th scope="row" class="text-start">Permissions</th>
+              <td>
+                <i class="bi bi-check-lg"></i>
+              </td>
+              <td>
+                <i class="bi bi-check-lg"></i>
+              </td>
+              <td>
+                <i class="bi bi-check-lg"></i>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-start">Sharing</th>
+              <td></td>
+              <td>
+                <i class="bi bi-check-lg"></i>
+              </td>
+              <td>
+                <i class="bi bi-check-lg"></i>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-start">Unlimited members</th>
+              <td></td>
+              <td>
+                <i class="bi bi-check-lg"></i>
+              </td>
+              <td>
+                <i class="bi bi-check-lg"></i>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-start">Extra security</th>
+              <td></td>
+              <td></td>
+              <td>
+                <i class="bi bi-check-lg"></i>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <div class="container">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <p class="col-md-4 mb-0 text-muted">Ferniie, 2022</p>
+    <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+      <svg class="bi me-2" width="40" height="32"></svg>
+    </a>
+    <ul class="nav col-md-4 justify-content-end">
+      <li>
+        <a href="Home.html" class="nav-link px-2 link-secondary">Home</a>
+      </li>
+      <li>
+        <a href="page2.html" class="nav-link px-2 link-dark">About</a>
+      </li>
+      <li>
+        <a href="Page1.html" class="nav-link px-2 link-dark">Services</a>
+      </li>
+
+      <li>
+        <a href="Contact.html" class="nav-link px-2 link-dark">Contact</a>
+      </li>
+    </ul>
+  </footer>
+</div>
+    <!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
